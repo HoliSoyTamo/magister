@@ -1,5 +1,5 @@
 <form [formGroup]="usuario">
-    <h1><span>I</span>niciar <span>S</span>esion</h1>
+    <h1><span>I</span>niciar <span>S</span>esión</h1>
     <div class="mb-3 form-group">
         <input type="text" [(ngModel)]="usuario2.user" formControlName="user" class="form-control" placeholder="Usuario" [ngClass]="{ 'is-invalid': submitted && f.user.errors }">
         <div *ngIf="submitted && f.user.errors" class="invalid-feedback">
