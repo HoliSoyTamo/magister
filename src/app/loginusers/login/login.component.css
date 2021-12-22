@@ -48,5 +48,5 @@ button span {
 
 button:hover {
     background-color: var(--color-naranja-oscuro);
-    transition: .8s;
+    transition: .7s;
 }
