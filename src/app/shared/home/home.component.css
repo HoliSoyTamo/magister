@@ -1,8 +1,23 @@
-* {
-    border: solid 1px red;
+.login {
+    z-index: 1;
 }
 
 div {
     height: 100vh;
-    background-color: orangered;
+    background-image: url(src/assets/img/fondo.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+div::before {
+    content: "";
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(rgba(172, 109, 9, 0.281), rgba(172, 109, 9, 0.281));
+    z-index: 0;
 }
