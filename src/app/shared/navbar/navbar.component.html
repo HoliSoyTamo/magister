@@ -1,5 +1,9 @@
 <nav *ngIf="loged" class="navbar navbar-expand navbar-dark bg-dark">
     <div class="nav navbar-nav">
-        <a class="nav-item nav-link" (click)="cerrarSesion()">Cerrar Sesión</a>
+        <a class="nav-item nav-link" [routerLink]="['/registerUsers']" routerLinkActive="active">Registrar Usuarios</a>
+        <a class="nav-item nav-link" [routerLink]="['/genDoc']" routerLinkActive="active">Generar Documentos</a>
+        <a class="nav-item nav-link" [routerLink]="['/registerStudents']" routerLinkActive="active">Registrar Estudiantes</a>
+        <a class="nav-item nav-link" [routerLink]="['/search']" routerLinkActive="active">Buscar Estudiantes</a>
+        <a class="btn btn-danger" (click)="cerrarSesion()" role="button">Cerrar Sesión</a>
     </div>
 </nav>
