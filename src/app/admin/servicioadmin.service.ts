@@ -1,5 +1,4 @@
 import { Injectable } from '@angular/core';
-import { User } from '../loginusers/user';
 import { HttpClient } from '@angular/common/http';
 
 @Injectable({

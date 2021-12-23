@@ -1,5 +1,10 @@
 import { Component, OnInit } from '@angular/core';
-import { FormsModule, FormBuilder, FormGroup, Validators } from '@angular/forms';
+import {
+  FormsModule,
+  FormBuilder,
+  FormGroup,
+  Validators,
+} from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
 import { Servicioadmin } from '../servicioadmin.service';
 
@@ -64,7 +69,12 @@ export class RegisterUsersComponent implements OnInit {
   }
 
   insertarUsuario() {
-    this.servicioAdmin.insertarUsuario(this.contacto.value);
+    //this.servicioAdmin.insertarUsuario(this.contacto.value);
+    this.servicioAdmin.insertarUsuario(this.contacto.value).subscribe((datos) => {
+      /*if (datos['resultado'] == 'OK') {
+        ventana2();
+      }*/
+    });
   }
 
   hayRegistros() {
@@ -74,5 +84,4 @@ export class RegisterUsersComponent implements OnInit {
       return true;
     }
   }
-
 }
