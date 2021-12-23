@@ -1,0 +1,7 @@
+{
+    "/api/*": {
+        "target": "http://elfermagister.atwebpages.com",
+        "secure": "false",
+        "logLevel": "debug"
+    }
+}

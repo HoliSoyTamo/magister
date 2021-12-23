@@ -5,7 +5,7 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root',
 })
 export class Servicioadmin {
-  baseUrl: string = 'http://elfermagister.atwebpages.com/admin';
+  baseUrl: string = '/admin';
   constructor(private http: HttpClient) {}
 
   insertarUsuario(contacto: any) {
