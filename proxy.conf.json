@@ -1,7 +1,7 @@
 {
-    "/api/*": {
+    "/login/*": {
         "target": "http://elfermagister.atwebpages.com",
-        "secure": "false",
-        "logLevel": "debug"
+        "secure": "true",
+        "changeOrigin": true
     }
 }
